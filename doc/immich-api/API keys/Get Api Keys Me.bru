@@ -1,0 +1,15 @@
+meta {
+  name: Get Api Keys Me
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/api-keys/me
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

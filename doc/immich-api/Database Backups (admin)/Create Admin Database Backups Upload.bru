@@ -1,0 +1,15 @@
+meta {
+  name: Create Admin Database Backups Upload
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/admin/database-backups/upload
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

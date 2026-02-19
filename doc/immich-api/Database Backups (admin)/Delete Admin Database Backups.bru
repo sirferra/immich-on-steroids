@@ -1,0 +1,23 @@
+meta {
+  name: Delete Admin Database Backups
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/admin/database-backups
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "backups": [
+      ""
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

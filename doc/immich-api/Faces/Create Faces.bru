@@ -1,0 +1,28 @@
+meta {
+  name: Create Faces
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/faces
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "assetId": "",
+    "height": 0,
+    "imageHeight": 0,
+    "imageWidth": 0,
+    "personId": "",
+    "width": 0,
+    "x": 0,
+    "y": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Create Sync Stream
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/sync/stream
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "reset": false,
+    "types": [
+      "AlbumsV1"
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

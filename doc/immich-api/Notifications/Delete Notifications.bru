@@ -1,0 +1,23 @@
+meta {
+  name: Delete Notifications
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{baseUrl}}/notifications
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "ids": [
+      ""
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

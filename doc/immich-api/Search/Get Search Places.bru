@@ -1,0 +1,19 @@
+meta {
+  name: Get Search Places
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/search/places
+  body: none
+  auth: inherit
+}
+
+params:query {
+  name: 
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Get Assets {id}
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/assets/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+params:query {
+  key: 
+  slug: 
+}
+
+settings {
+  encodeUrl: true
+}

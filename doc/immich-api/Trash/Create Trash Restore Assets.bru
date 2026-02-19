@@ -1,0 +1,23 @@
+meta {
+  name: Create Trash Restore Assets
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/trash/restore/assets
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "ids": [
+      ""
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

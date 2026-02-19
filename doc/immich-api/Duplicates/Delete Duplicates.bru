@@ -1,0 +1,23 @@
+meta {
+  name: Delete Duplicates
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{baseUrl}}/duplicates
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "ids": [
+      ""
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

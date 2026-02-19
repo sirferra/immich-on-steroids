@@ -1,0 +1,26 @@
+meta {
+  name: Replace Albums {id} User {userId}
+  type: http
+  seq: 9
+}
+
+put {
+  url: {{baseUrl}}/albums/:id/user/:userId
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+  userId: 
+}
+
+body:json {
+  {
+    "role": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Get Partners
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/partners
+  body: none
+  auth: inherit
+}
+
+params:query {
+  direction: 
+}
+
+settings {
+  encodeUrl: true
+}

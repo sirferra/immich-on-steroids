@@ -1,0 +1,24 @@
+meta {
+  name: Get Memories
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/memories
+  body: none
+  auth: inherit
+}
+
+params:query {
+  for: 
+  isSaved: 
+  isTrashed: 
+  order: 
+  size: 
+  type: 
+}
+
+settings {
+  encodeUrl: true
+}

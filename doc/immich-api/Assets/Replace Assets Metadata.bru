@@ -1,0 +1,27 @@
+meta {
+  name: Replace Assets Metadata
+  type: http
+  seq: 26
+}
+
+put {
+  url: {{baseUrl}}/assets/metadata
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "items": [
+      {
+        "assetId": "",
+        "key": "",
+        "value": ""
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

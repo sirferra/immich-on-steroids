@@ -1,0 +1,25 @@
+meta {
+  name: Replace Stacks {id}
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/stacks/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "primaryAssetId": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

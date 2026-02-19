@@ -1,0 +1,20 @@
+meta {
+  name: Delete Assets {id} Metadata {key}
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{baseUrl}}/assets/:id/metadata/:key
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+  key: 
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Create Shared Links Login
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/shared-links/login
+  body: json
+  auth: inherit
+}
+
+params:query {
+  key: 
+  slug: 
+}
+
+body:json {
+  {
+    "password": "password"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

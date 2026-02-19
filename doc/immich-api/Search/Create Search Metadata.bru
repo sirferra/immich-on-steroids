@@ -1,0 +1,70 @@
+meta {
+  name: Create Search Metadata
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/search/metadata
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "albumIds": [
+      ""
+    ],
+    "checksum": "",
+    "city": "",
+    "country": "",
+    "createdAfter": "",
+    "createdBefore": "",
+    "description": "",
+    "deviceAssetId": "",
+    "deviceId": "",
+    "encodedVideoPath": "",
+    "id": "",
+    "isEncoded": false,
+    "isFavorite": false,
+    "isMotion": false,
+    "isNotInAlbum": false,
+    "isOffline": false,
+    "lensModel": "",
+    "libraryId": "",
+    "make": "",
+    "model": "",
+    "ocr": "",
+    "order": "",
+    "originalFileName": "",
+    "originalPath": "",
+    "page": 0,
+    "personIds": [
+      ""
+    ],
+    "previewPath": "",
+    "rating": 0,
+    "size": 0,
+    "state": "",
+    "tagIds": [
+      ""
+    ],
+    "takenAfter": "",
+    "takenBefore": "",
+    "thumbnailPath": "",
+    "trashedAfter": "",
+    "trashedBefore": "",
+    "type": "",
+    "updatedAfter": "",
+    "updatedBefore": "",
+    "visibility": "",
+    "withDeleted": false,
+    "withExif": false,
+    "withPeople": false,
+    "withStacked": false
+  }
+}
+
+settings {
+  encodeUrl: true
+}

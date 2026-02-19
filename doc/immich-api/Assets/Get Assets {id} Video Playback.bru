@@ -1,0 +1,24 @@
+meta {
+  name: Get Assets {id} Video Playback
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{baseUrl}}/assets/:id/video/playback
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+params:query {
+  key: 
+  slug: 
+}
+
+settings {
+  encodeUrl: true
+}

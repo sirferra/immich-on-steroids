@@ -1,0 +1,20 @@
+meta {
+  name: Delete Stacks {id} Assets {assetId}
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/stacks/:id/assets/:assetId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  assetId: 
+  id: 
+}
+
+settings {
+  encodeUrl: true
+}

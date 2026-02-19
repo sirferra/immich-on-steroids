@@ -1,0 +1,19 @@
+meta {
+  name: Create Partners {id}
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/partners/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+settings {
+  encodeUrl: true
+}

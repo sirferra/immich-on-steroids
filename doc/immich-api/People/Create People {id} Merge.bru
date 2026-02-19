@@ -1,0 +1,27 @@
+meta {
+  name: Create People {id} Merge
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/people/:id/merge
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "ids": [
+      ""
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

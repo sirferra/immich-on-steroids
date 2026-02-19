@@ -1,0 +1,23 @@
+meta {
+  name: Get Queues {name} Jobs
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/queues/:name/jobs
+  body: none
+  auth: inherit
+}
+
+params:path {
+  name: 
+}
+
+params:query {
+  status: 
+}
+
+settings {
+  encodeUrl: true
+}

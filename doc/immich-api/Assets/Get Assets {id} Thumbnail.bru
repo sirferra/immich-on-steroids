@@ -1,0 +1,26 @@
+meta {
+  name: Get Assets {id} Thumbnail
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{baseUrl}}/assets/:id/thumbnail
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+params:query {
+  edited: 
+  key: 
+  size: 
+  slug: 
+}
+
+settings {
+  encodeUrl: true
+}

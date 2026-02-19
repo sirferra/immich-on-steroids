@@ -1,0 +1,15 @@
+meta {
+  name: Get Sync Ack
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/sync/ack
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Get Assets Device {deviceId}
+  type: http
+  seq: 17
+}
+
+get {
+  url: {{baseUrl}}/assets/device/:deviceId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  deviceId: 
+}
+
+settings {
+  encodeUrl: true
+}

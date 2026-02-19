@@ -1,0 +1,15 @@
+meta {
+  name: Get Queues
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/queues
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

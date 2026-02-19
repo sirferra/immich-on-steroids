@@ -1,0 +1,19 @@
+meta {
+  name: Get Admin Users {id} Sessions
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/admin/users/:id/sessions
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+settings {
+  encodeUrl: true
+}

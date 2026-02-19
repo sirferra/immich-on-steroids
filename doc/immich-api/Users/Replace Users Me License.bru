@@ -1,0 +1,22 @@
+meta {
+  name: Replace Users Me License
+  type: http
+  seq: 13
+}
+
+put {
+  url: {{baseUrl}}/users/me/license
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "activationKey": "",
+    "licenseKey": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

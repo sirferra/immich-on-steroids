@@ -1,0 +1,15 @@
+meta {
+  name: Get Server Version History
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{baseUrl}}/server/version-history
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

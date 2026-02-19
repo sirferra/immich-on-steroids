@@ -1,0 +1,15 @@
+meta {
+  name: Get Oauth Mobile Redirect
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{baseUrl}}/oauth/mobile-redirect
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

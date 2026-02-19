@@ -1,0 +1,27 @@
+meta {
+  name: Delete Memories {id} Assets
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/memories/:id/assets
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "ids": [
+      ""
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

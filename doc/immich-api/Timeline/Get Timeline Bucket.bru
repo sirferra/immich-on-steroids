@@ -1,0 +1,32 @@
+meta {
+  name: Get Timeline Bucket
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/timeline/bucket
+  body: none
+  auth: inherit
+}
+
+params:query {
+  albumId: 
+  isFavorite: 
+  isTrashed: 
+  key: 
+  order: 
+  personId: 
+  slug: 
+  tagId: 
+  timeBucket: 
+  userId: 
+  visibility: 
+  withCoordinates: 
+  withPartners: 
+  withStacked: 
+}
+
+settings {
+  encodeUrl: true
+}

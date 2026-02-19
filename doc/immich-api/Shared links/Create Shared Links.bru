@@ -1,0 +1,32 @@
+meta {
+  name: Create Shared Links
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/shared-links
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "albumId": "",
+    "allowDownload": false,
+    "allowUpload": false,
+    "assetIds": [
+      ""
+    ],
+    "description": "",
+    "expiresAt": "",
+    "password": "",
+    "showMetadata": false,
+    "slug": "",
+    "type": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

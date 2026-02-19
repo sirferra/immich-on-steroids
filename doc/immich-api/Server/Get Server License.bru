@@ -1,0 +1,15 @@
+meta {
+  name: Get Server License
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/server/license
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

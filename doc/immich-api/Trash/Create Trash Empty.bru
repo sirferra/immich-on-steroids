@@ -1,0 +1,15 @@
+meta {
+  name: Create Trash Empty
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/trash/empty
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

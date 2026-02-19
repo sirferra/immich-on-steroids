@@ -1,0 +1,61 @@
+meta {
+  name: Create Search Smart
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/search/smart
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "albumIds": [
+      ""
+    ],
+    "city": "",
+    "country": "",
+    "createdAfter": "",
+    "createdBefore": "",
+    "deviceId": "",
+    "isEncoded": false,
+    "isFavorite": false,
+    "isMotion": false,
+    "isNotInAlbum": false,
+    "isOffline": false,
+    "language": "",
+    "lensModel": "",
+    "libraryId": "",
+    "make": "",
+    "model": "",
+    "ocr": "",
+    "page": 0,
+    "personIds": [
+      ""
+    ],
+    "query": "",
+    "queryAssetId": "",
+    "rating": 0,
+    "size": 0,
+    "state": "",
+    "tagIds": [
+      ""
+    ],
+    "takenAfter": "",
+    "takenBefore": "",
+    "trashedAfter": "",
+    "trashedBefore": "",
+    "type": "",
+    "updatedAfter": "",
+    "updatedBefore": "",
+    "visibility": "",
+    "withDeleted": false,
+    "withExif": false
+  }
+}
+
+settings {
+  encodeUrl: true
+}

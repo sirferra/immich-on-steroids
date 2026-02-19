@@ -1,0 +1,30 @@
+meta {
+  name: Replace People {id} Reassign
+  type: http
+  seq: 11
+}
+
+put {
+  url: {{baseUrl}}/people/:id/reassign
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "data": [
+      {
+        "assetId": "",
+        "personId": ""
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

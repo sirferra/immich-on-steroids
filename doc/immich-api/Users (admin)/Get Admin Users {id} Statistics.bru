@@ -1,0 +1,25 @@
+meta {
+  name: Get Admin Users {id} Statistics
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/admin/users/:id/statistics
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+params:query {
+  isFavorite: 
+  isTrashed: 
+  visibility: 
+}
+
+settings {
+  encodeUrl: true
+}

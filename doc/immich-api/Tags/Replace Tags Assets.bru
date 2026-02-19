@@ -1,0 +1,26 @@
+meta {
+  name: Replace Tags Assets
+  type: http
+  seq: 9
+}
+
+put {
+  url: {{baseUrl}}/tags/assets
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "assetIds": [
+      ""
+    ],
+    "tagIds": [
+      ""
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

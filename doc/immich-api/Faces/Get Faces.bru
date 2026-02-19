@@ -1,0 +1,19 @@
+meta {
+  name: Get Faces
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/faces
+  body: none
+  auth: inherit
+}
+
+params:query {
+  id: 
+}
+
+settings {
+  encodeUrl: true
+}

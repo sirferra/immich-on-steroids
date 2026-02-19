@@ -1,0 +1,19 @@
+meta {
+  name: Get Admin Database Backups {filename}
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/admin/database-backups/:filename
+  body: none
+  auth: inherit
+}
+
+params:path {
+  filename: 
+}
+
+settings {
+  encodeUrl: true
+}

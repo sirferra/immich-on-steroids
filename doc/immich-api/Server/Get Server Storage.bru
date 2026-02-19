@@ -1,0 +1,15 @@
+meta {
+  name: Get Server Storage
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/server/storage
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

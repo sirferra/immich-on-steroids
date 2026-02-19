@@ -1,0 +1,19 @@
+meta {
+  name: Get Assets {id} Edits
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/assets/:id/edits
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+settings {
+  encodeUrl: true
+}

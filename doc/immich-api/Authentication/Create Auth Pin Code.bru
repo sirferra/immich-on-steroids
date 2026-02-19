@@ -1,0 +1,21 @@
+meta {
+  name: Create Auth Pin Code
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/auth/pin-code
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "pinCode": "123456"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

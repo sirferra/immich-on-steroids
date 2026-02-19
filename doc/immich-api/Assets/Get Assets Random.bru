@@ -1,0 +1,19 @@
+meta {
+  name: Get Assets Random
+  type: http
+  seq: 18
+}
+
+get {
+  url: {{baseUrl}}/assets/random
+  body: none
+  auth: inherit
+}
+
+params:query {
+  count: 
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Get Notifications
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/notifications
+  body: none
+  auth: inherit
+}
+
+params:query {
+  id: 
+  level: 
+  type: 
+  unread: 
+}
+
+settings {
+  encodeUrl: true
+}

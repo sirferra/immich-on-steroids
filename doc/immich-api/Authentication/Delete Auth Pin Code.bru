@@ -1,0 +1,22 @@
+meta {
+  name: Delete Auth Pin Code
+  type: http
+  seq: 13
+}
+
+delete {
+  url: {{baseUrl}}/auth/pin-code
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "password": "",
+    "pinCode": "123456"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,31 @@
+meta {
+  name: Replace Libraries {id}
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/libraries/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "exclusionPatterns": [
+      ""
+    ],
+    "importPaths": [
+      ""
+    ],
+    "name": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

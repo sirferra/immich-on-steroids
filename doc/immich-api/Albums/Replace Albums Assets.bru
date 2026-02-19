@@ -1,0 +1,31 @@
+meta {
+  name: Replace Albums Assets
+  type: http
+  seq: 11
+}
+
+put {
+  url: {{baseUrl}}/albums/assets
+  body: json
+  auth: inherit
+}
+
+params:query {
+  key: 
+  slug: 
+}
+
+body:json {
+  {
+    "albumIds": [
+      ""
+    ],
+    "assetIds": [
+      ""
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

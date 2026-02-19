@@ -1,0 +1,25 @@
+meta {
+  name: Delete Faces {id}
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/faces/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "force": false
+  }
+}
+
+settings {
+  encodeUrl: true
+}

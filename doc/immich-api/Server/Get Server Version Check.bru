@@ -1,0 +1,15 @@
+meta {
+  name: Get Server Version Check
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{baseUrl}}/server/version-check
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Get People
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/people
+  body: none
+  auth: inherit
+}
+
+params:query {
+  closestAssetId: 
+  closestPersonId: 
+  page: 
+  size: 
+  withHidden: 
+}
+
+settings {
+  encodeUrl: true
+}

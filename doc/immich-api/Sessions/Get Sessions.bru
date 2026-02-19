@@ -1,0 +1,15 @@
+meta {
+  name: Get Sessions
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/sessions
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

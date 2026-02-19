@@ -1,0 +1,15 @@
+meta {
+  name: Get Server Ping
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/server/ping
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

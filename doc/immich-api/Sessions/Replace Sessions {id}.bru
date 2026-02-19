@@ -1,0 +1,25 @@
+meta {
+  name: Replace Sessions {id}
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/sessions/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "isPendingSyncReset": false
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Get Admin Maintenance Status
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/admin/maintenance/status
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Replace Api Keys {id}
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/api-keys/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "name": "",
+    "permissions": [
+      "all"
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

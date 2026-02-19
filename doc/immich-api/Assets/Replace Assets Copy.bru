@@ -1,0 +1,27 @@
+meta {
+  name: Replace Assets Copy
+  type: http
+  seq: 25
+}
+
+put {
+  url: {{baseUrl}}/assets/copy
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "albums": false,
+    "favorite": false,
+    "sharedLinks": false,
+    "sidecar": false,
+    "sourceId": "",
+    "stack": false,
+    "targetId": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

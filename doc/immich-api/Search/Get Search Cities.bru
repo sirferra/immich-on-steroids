@@ -1,0 +1,15 @@
+meta {
+  name: Get Search Cities
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/search/cities
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

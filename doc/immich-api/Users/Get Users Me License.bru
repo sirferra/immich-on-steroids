@@ -1,0 +1,15 @@
+meta {
+  name: Get Users Me License
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/users/me/license
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

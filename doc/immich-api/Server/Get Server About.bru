@@ -1,0 +1,15 @@
+meta {
+  name: Get Server About
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/server/about
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

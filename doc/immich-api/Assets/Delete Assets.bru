@@ -1,0 +1,24 @@
+meta {
+  name: Delete Assets
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/assets
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "force": false,
+    "ids": [
+      ""
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

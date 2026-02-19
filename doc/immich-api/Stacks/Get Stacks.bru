@@ -1,0 +1,19 @@
+meta {
+  name: Get Stacks
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/stacks
+  body: none
+  auth: inherit
+}
+
+params:query {
+  primaryAssetId: 
+}
+
+settings {
+  encodeUrl: true
+}

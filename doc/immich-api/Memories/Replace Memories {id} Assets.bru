@@ -1,0 +1,27 @@
+meta {
+  name: Replace Memories {id} Assets
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/memories/:id/assets
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "ids": [
+      ""
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

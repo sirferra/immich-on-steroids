@@ -1,0 +1,15 @@
+meta {
+  name: Get System Config Storage Template Options
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/system-config/storage-template-options
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

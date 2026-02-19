@@ -1,0 +1,15 @@
+meta {
+  name: Get Server Media Types
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/server/media-types
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

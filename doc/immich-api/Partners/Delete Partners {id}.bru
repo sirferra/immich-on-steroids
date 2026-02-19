@@ -1,0 +1,19 @@
+meta {
+  name: Delete Partners {id}
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/partners/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+settings {
+  encodeUrl: true
+}

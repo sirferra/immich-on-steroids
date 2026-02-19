@@ -1,0 +1,33 @@
+meta {
+  name: Replace Admin Users {id}
+  type: http
+  seq: 9
+}
+
+put {
+  url: {{baseUrl}}/admin/users/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "avatarColor": "",
+    "email": "",
+    "isAdmin": false,
+    "name": "",
+    "password": "",
+    "pinCode": "123456",
+    "quotaSizeInBytes": 0,
+    "shouldChangePassword": false,
+    "storageLabel": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

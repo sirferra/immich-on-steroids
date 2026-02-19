@@ -1,0 +1,15 @@
+meta {
+  name: Create Admin Database Backups Start Restore
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/admin/database-backups/start-restore
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Create Auth Session Lock
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/auth/session/lock
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

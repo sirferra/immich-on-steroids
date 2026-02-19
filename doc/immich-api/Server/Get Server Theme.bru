@@ -1,0 +1,15 @@
+meta {
+  name: Get Server Theme
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/server/theme
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

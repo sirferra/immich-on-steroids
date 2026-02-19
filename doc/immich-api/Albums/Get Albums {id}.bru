@@ -1,0 +1,25 @@
+meta {
+  name: Get Albums {id}
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/albums/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+params:query {
+  key: 
+  slug: 
+  withoutAssets: 
+}
+
+settings {
+  encodeUrl: true
+}

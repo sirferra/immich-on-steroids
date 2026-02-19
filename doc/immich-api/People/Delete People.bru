@@ -1,0 +1,23 @@
+meta {
+  name: Delete People
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/people
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "ids": [
+      ""
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

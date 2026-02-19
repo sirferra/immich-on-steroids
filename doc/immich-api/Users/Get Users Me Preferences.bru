@@ -1,0 +1,15 @@
+meta {
+  name: Get Users Me Preferences
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/users/me/preferences
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

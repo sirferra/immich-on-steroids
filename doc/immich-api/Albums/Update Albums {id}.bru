@@ -1,0 +1,29 @@
+meta {
+  name: Update Albums {id}
+  type: http
+  seq: 12
+}
+
+patch {
+  url: {{baseUrl}}/albums/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "albumName": "",
+    "albumThumbnailAssetId": "",
+    "description": "",
+    "isActivityEnabled": false,
+    "order": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

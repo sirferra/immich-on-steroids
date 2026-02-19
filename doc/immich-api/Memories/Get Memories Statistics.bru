@@ -1,0 +1,24 @@
+meta {
+  name: Get Memories Statistics
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/memories/statistics
+  body: none
+  auth: inherit
+}
+
+params:query {
+  for: 
+  isSaved: 
+  isTrashed: 
+  order: 
+  size: 
+  type: 
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Get Activities Statistics
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/activities/statistics
+  body: none
+  auth: inherit
+}
+
+params:query {
+  albumId: 
+  assetId: 
+}
+
+settings {
+  encodeUrl: true
+}

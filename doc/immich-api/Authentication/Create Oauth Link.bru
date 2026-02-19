@@ -1,0 +1,23 @@
+meta {
+  name: Create Oauth Link
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{baseUrl}}/oauth/link
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "codeVerifier": "",
+    "state": "",
+    "url": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

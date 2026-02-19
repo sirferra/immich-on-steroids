@@ -1,0 +1,30 @@
+meta {
+  name: Replace People {id}
+  type: http
+  seq: 10
+}
+
+put {
+  url: {{baseUrl}}/people/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "birthDate": "",
+    "color": "",
+    "featureFaceAssetId": "",
+    "isFavorite": false,
+    "isHidden": false,
+    "name": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

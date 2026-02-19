@@ -1,0 +1,26 @@
+meta {
+  name: Replace Jobs {name}
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/jobs/:name
+  body: json
+  auth: inherit
+}
+
+params:path {
+  name: 
+}
+
+body:json {
+  {
+    "command": "",
+    "force": false
+  }
+}
+
+settings {
+  encodeUrl: true
+}

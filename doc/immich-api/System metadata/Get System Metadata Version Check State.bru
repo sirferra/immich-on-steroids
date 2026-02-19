@@ -1,0 +1,15 @@
+meta {
+  name: Get System Metadata Version Check State
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/system-metadata/version-check-state
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

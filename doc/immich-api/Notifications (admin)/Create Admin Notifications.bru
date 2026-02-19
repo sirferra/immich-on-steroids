@@ -1,0 +1,27 @@
+meta {
+  name: Create Admin Notifications
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/admin/notifications
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "data": {},
+    "description": "",
+    "level": "",
+    "readAt": "",
+    "title": "",
+    "type": "",
+    "userId": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

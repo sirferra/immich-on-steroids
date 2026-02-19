@@ -1,0 +1,19 @@
+meta {
+  name: Get View Folder
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/view/folder
+  body: none
+  auth: inherit
+}
+
+params:query {
+  path: 
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Delete Queues {name} Jobs
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{baseUrl}}/queues/:name/jobs
+  body: json
+  auth: inherit
+}
+
+params:path {
+  name: 
+}
+
+body:json {
+  {
+    "failed": false
+  }
+}
+
+settings {
+  encodeUrl: true
+}

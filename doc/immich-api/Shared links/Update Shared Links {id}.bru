@@ -1,0 +1,32 @@
+meta {
+  name: Update Shared Links {id}
+  type: http
+  seq: 9
+}
+
+patch {
+  url: {{baseUrl}}/shared-links/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "allowDownload": false,
+    "allowUpload": false,
+    "changeExpiryTime": false,
+    "description": "",
+    "expiresAt": "",
+    "password": "",
+    "showMetadata": false,
+    "slug": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

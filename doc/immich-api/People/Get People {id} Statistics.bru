@@ -1,0 +1,19 @@
+meta {
+  name: Get People {id} Statistics
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/people/:id/statistics
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+settings {
+  encodeUrl: true
+}

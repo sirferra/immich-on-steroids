@@ -1,0 +1,15 @@
+meta {
+  name: Delete Users Profile Image
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/users/profile-image
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

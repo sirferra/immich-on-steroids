@@ -1,0 +1,25 @@
+meta {
+  name: Replace Tags {id}
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/tags/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "color": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

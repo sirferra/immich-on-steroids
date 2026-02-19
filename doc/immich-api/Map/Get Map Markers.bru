@@ -1,0 +1,24 @@
+meta {
+  name: Get Map Markers
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/map/markers
+  body: none
+  auth: inherit
+}
+
+params:query {
+  fileCreatedAfter: 
+  fileCreatedBefore: 
+  isArchived: 
+  isFavorite: 
+  withPartners: 
+  withSharedAlbums: 
+}
+
+settings {
+  encodeUrl: true
+}

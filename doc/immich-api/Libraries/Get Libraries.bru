@@ -1,0 +1,15 @@
+meta {
+  name: Get Libraries
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/libraries
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

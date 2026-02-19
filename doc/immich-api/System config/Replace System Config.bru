@@ -1,0 +1,157 @@
+meta {
+  name: Replace System Config
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/system-config
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "backup": {
+      "database": ""
+    },
+    "ffmpeg": {
+      "accel": "",
+      "accelDecode": false,
+      "acceptedAudioCodecs": [],
+      "acceptedContainers": [],
+      "acceptedVideoCodecs": [],
+      "bframes": 0,
+      "cqMode": "",
+      "crf": 0,
+      "gopSize": 0,
+      "maxBitrate": "",
+      "preferredHwDevice": "",
+      "preset": "",
+      "refs": 0,
+      "targetAudioCodec": "",
+      "targetResolution": "",
+      "targetVideoCodec": "",
+      "temporalAQ": false,
+      "threads": 0,
+      "tonemap": "",
+      "transcode": "",
+      "twoPass": false
+    },
+    "image": {
+      "colorspace": "",
+      "extractEmbedded": false,
+      "fullsize": "",
+      "preview": "",
+      "thumbnail": ""
+    },
+    "job": {
+      "backgroundTask": "",
+      "editor": "",
+      "faceDetection": "",
+      "library": "",
+      "metadataExtraction": "",
+      "migration": "",
+      "notifications": "",
+      "ocr": "",
+      "search": "",
+      "sidecar": "",
+      "smartSearch": "",
+      "thumbnailGeneration": "",
+      "videoConversion": "",
+      "workflow": ""
+    },
+    "library": {
+      "scan": "",
+      "watch": ""
+    },
+    "logging": {
+      "enabled": false,
+      "level": ""
+    },
+    "machineLearning": {
+      "availabilityChecks": "",
+      "clip": "",
+      "duplicateDetection": "",
+      "enabled": false,
+      "facialRecognition": "",
+      "ocr": "",
+      "urls": []
+    },
+    "map": {
+      "darkStyle": "",
+      "enabled": false,
+      "lightStyle": ""
+    },
+    "metadata": {
+      "faces": ""
+    },
+    "newVersionCheck": {
+      "enabled": false
+    },
+    "nightlyTasks": {
+      "clusterNewFaces": false,
+      "databaseCleanup": false,
+      "generateMemories": false,
+      "missingThumbnails": false,
+      "startTime": "",
+      "syncQuotaUsage": false
+    },
+    "notifications": {
+      "smtp": ""
+    },
+    "oauth": {
+      "autoLaunch": false,
+      "autoRegister": false,
+      "buttonText": "",
+      "clientId": "",
+      "clientSecret": "",
+      "defaultStorageQuota": 0,
+      "enabled": false,
+      "issuerUrl": "",
+      "mobileOverrideEnabled": false,
+      "mobileRedirectUri": "",
+      "profileSigningAlgorithm": "",
+      "roleClaim": "",
+      "scope": "",
+      "signingAlgorithm": "",
+      "storageLabelClaim": "",
+      "storageQuotaClaim": "",
+      "timeout": 0,
+      "tokenEndpointAuthMethod": ""
+    },
+    "passwordLogin": {
+      "enabled": false
+    },
+    "reverseGeocoding": {
+      "enabled": false
+    },
+    "server": {
+      "externalDomain": "",
+      "loginPageMessage": "",
+      "publicUsers": false
+    },
+    "storageTemplate": {
+      "enabled": false,
+      "hashVerificationEnabled": false,
+      "template": ""
+    },
+    "templates": {
+      "email": ""
+    },
+    "theme": {
+      "customCss": ""
+    },
+    "trash": {
+      "days": 0,
+      "enabled": false
+    },
+    "user": {
+      "deleteDelay": 0
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

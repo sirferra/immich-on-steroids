@@ -1,0 +1,31 @@
+meta {
+  name: Replace People
+  type: http
+  seq: 9
+}
+
+put {
+  url: {{baseUrl}}/people
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "people": [
+      {
+        "birthDate": "",
+        "color": "",
+        "featureFaceAssetId": "",
+        "id": "",
+        "isFavorite": "",
+        "isHidden": "",
+        "name": ""
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

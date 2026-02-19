@@ -1,0 +1,25 @@
+meta {
+  name: Replace Assets {id} Edits
+  type: http
+  seq: 22
+}
+
+put {
+  url: {{baseUrl}}/assets/:id/edits
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "edits": []
+  }
+}
+
+settings {
+  encodeUrl: true
+}

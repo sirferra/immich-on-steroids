@@ -1,0 +1,15 @@
+meta {
+  name: Get Users Me Onboarding
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/users/me/onboarding
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Replace Queues {name}
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/queues/:name
+  body: json
+  auth: inherit
+}
+
+params:path {
+  name: 
+}
+
+body:json {
+  {
+    "isPaused": false
+  }
+}
+
+settings {
+  encodeUrl: true
+}

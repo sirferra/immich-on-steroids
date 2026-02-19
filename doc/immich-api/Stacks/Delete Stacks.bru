@@ -1,0 +1,23 @@
+meta {
+  name: Delete Stacks
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{baseUrl}}/stacks
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "ids": [
+      ""
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

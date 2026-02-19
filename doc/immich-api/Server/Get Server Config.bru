@@ -1,0 +1,15 @@
+meta {
+  name: Get Server Config
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/server/config
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

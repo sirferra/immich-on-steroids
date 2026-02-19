@@ -1,0 +1,30 @@
+meta {
+  name: Create Libraries {id} Validate
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/libraries/:id/validate
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "exclusionPatterns": [
+      ""
+    ],
+    "importPaths": [
+      ""
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

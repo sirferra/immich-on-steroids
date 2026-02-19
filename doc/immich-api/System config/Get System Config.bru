@@ -1,0 +1,15 @@
+meta {
+  name: Get System Config
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/system-config
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

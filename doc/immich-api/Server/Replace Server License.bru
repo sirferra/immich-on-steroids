@@ -1,0 +1,22 @@
+meta {
+  name: Replace Server License
+  type: http
+  seq: 15
+}
+
+put {
+  url: {{baseUrl}}/server/license
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "activationKey": "",
+    "licenseKey": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

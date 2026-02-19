@@ -1,0 +1,32 @@
+meta {
+  name: Replace Assets {id}
+  type: http
+  seq: 21
+}
+
+put {
+  url: {{baseUrl}}/assets/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "dateTimeOriginal": "",
+    "description": "",
+    "isFavorite": false,
+    "latitude": 0,
+    "livePhotoVideoId": "",
+    "longitude": 0,
+    "rating": 0,
+    "visibility": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

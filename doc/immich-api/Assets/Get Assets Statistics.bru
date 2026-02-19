@@ -1,0 +1,21 @@
+meta {
+  name: Get Assets Statistics
+  type: http
+  seq: 19
+}
+
+get {
+  url: {{baseUrl}}/assets/statistics
+  body: none
+  auth: inherit
+}
+
+params:query {
+  isFavorite: 
+  isTrashed: 
+  visibility: 
+}
+
+settings {
+  encodeUrl: true
+}

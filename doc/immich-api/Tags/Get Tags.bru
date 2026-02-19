@@ -1,0 +1,15 @@
+meta {
+  name: Get Tags
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/tags
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

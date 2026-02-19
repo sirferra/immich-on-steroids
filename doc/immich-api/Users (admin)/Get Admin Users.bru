@@ -1,0 +1,20 @@
+meta {
+  name: Get Admin Users
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/admin/users
+  body: none
+  auth: inherit
+}
+
+params:query {
+  id: 
+  withDeleted: 
+}
+
+settings {
+  encodeUrl: true
+}

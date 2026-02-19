@@ -1,0 +1,31 @@
+meta {
+  name: Get Timeline Buckets
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/timeline/buckets
+  body: none
+  auth: inherit
+}
+
+params:query {
+  albumId: 
+  isFavorite: 
+  isTrashed: 
+  key: 
+  order: 
+  personId: 
+  slug: 
+  tagId: 
+  userId: 
+  visibility: 
+  withCoordinates: 
+  withPartners: 
+  withStacked: 
+}
+
+settings {
+  encodeUrl: true
+}

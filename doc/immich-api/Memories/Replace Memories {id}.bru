@@ -1,0 +1,27 @@
+meta {
+  name: Replace Memories {id}
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/memories/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "isSaved": false,
+    "memoryAt": "",
+    "seenAt": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

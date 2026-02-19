@@ -1,0 +1,25 @@
+meta {
+  name: Replace Faces {id}
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/faces/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "id": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

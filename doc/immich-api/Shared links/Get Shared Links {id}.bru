@@ -1,0 +1,19 @@
+meta {
+  name: Get Shared Links {id}
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/shared-links/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+settings {
+  encodeUrl: true
+}

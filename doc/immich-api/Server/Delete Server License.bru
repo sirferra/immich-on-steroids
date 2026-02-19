@@ -1,0 +1,15 @@
+meta {
+  name: Delete Server License
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{baseUrl}}/server/license
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

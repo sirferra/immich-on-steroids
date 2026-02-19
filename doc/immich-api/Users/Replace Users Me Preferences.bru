@@ -1,0 +1,65 @@
+meta {
+  name: Replace Users Me Preferences
+  type: http
+  seq: 15
+}
+
+put {
+  url: {{baseUrl}}/users/me/preferences
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "albums": {
+      "defaultAssetOrder": ""
+    },
+    "avatar": {
+      "color": ""
+    },
+    "cast": {
+      "gCastEnabled": false
+    },
+    "download": {
+      "archiveSize": 0,
+      "includeEmbeddedVideos": false
+    },
+    "emailNotifications": {
+      "albumInvite": false,
+      "albumUpdate": false,
+      "enabled": false
+    },
+    "folders": {
+      "enabled": false,
+      "sidebarWeb": false
+    },
+    "memories": {
+      "duration": 0,
+      "enabled": false
+    },
+    "people": {
+      "enabled": false,
+      "sidebarWeb": false
+    },
+    "purchase": {
+      "hideBuyButtonUntil": "",
+      "showSupportBadge": false
+    },
+    "ratings": {
+      "enabled": false
+    },
+    "sharedLinks": {
+      "enabled": false,
+      "sidebarWeb": false
+    },
+    "tags": {
+      "enabled": false,
+      "sidebarWeb": false
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

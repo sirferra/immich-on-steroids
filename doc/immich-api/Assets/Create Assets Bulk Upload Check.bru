@@ -1,0 +1,26 @@
+meta {
+  name: Create Assets Bulk Upload Check
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/assets/bulk-upload-check
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "assets": [
+      {
+        "checksum": "",
+        "id": ""
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

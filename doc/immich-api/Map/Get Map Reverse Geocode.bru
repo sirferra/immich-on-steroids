@@ -1,0 +1,20 @@
+meta {
+  name: Get Map Reverse Geocode
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/map/reverse-geocode
+  body: none
+  auth: inherit
+}
+
+params:query {
+  lat: 
+  lon: 
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,31 @@
+meta {
+  name: Create Albums
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/albums
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "albumName": "",
+    "albumUsers": [
+      {
+        "role": "",
+        "userId": ""
+      }
+    ],
+    "assetIds": [
+      ""
+    ],
+    "description": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

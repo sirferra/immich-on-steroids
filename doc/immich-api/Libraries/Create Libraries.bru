@@ -1,0 +1,28 @@
+meta {
+  name: Create Libraries
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/libraries
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "exclusionPatterns": [
+      ""
+    ],
+    "importPaths": [
+      ""
+    ],
+    "name": "",
+    "ownerId": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

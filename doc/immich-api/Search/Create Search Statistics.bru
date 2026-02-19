@@ -1,0 +1,55 @@
+meta {
+  name: Create Search Statistics
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/search/statistics
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "albumIds": [
+      ""
+    ],
+    "city": "",
+    "country": "",
+    "createdAfter": "",
+    "createdBefore": "",
+    "description": "",
+    "deviceId": "",
+    "isEncoded": false,
+    "isFavorite": false,
+    "isMotion": false,
+    "isNotInAlbum": false,
+    "isOffline": false,
+    "lensModel": "",
+    "libraryId": "",
+    "make": "",
+    "model": "",
+    "ocr": "",
+    "personIds": [
+      ""
+    ],
+    "rating": 0,
+    "state": "",
+    "tagIds": [
+      ""
+    ],
+    "takenAfter": "",
+    "takenBefore": "",
+    "trashedAfter": "",
+    "trashedBefore": "",
+    "type": "",
+    "updatedAfter": "",
+    "updatedBefore": "",
+    "visibility": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Get Search Suggestions
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/search/suggestions
+  body: none
+  auth: inherit
+}
+
+params:query {
+  country: 
+  includeNull: 
+  lensModel: 
+  make: 
+  model: 
+  state: 
+  type: 
+}
+
+settings {
+  encodeUrl: true
+}

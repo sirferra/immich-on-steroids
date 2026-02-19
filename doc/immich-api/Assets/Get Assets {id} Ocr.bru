@@ -1,0 +1,19 @@
+meta {
+  name: Get Assets {id} Ocr
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{baseUrl}}/assets/:id/ocr
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+settings {
+  encodeUrl: true
+}

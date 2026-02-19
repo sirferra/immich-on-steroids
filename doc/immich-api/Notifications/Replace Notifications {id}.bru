@@ -1,0 +1,25 @@
+meta {
+  name: Replace Notifications {id}
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/notifications/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "readAt": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

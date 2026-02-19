@@ -1,0 +1,36 @@
+meta {
+  name: Create Workflows
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/workflows
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "actions": [
+      {
+        "actionConfig": "",
+        "pluginActionId": ""
+      }
+    ],
+    "description": "",
+    "enabled": false,
+    "filters": [
+      {
+        "filterConfig": "",
+        "pluginFilterId": ""
+      }
+    ],
+    "name": "",
+    "triggerType": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

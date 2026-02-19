@@ -1,0 +1,26 @@
+meta {
+  name: Delete Assets Metadata
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{baseUrl}}/assets/metadata
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "items": [
+      {
+        "assetId": "",
+        "key": ""
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

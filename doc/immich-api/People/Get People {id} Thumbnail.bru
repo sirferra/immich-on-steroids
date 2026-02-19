@@ -1,0 +1,19 @@
+meta {
+  name: Get People {id} Thumbnail
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/people/:id/thumbnail
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+settings {
+  encodeUrl: true
+}

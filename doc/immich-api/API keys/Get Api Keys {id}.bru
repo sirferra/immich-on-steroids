@@ -1,0 +1,19 @@
+meta {
+  name: Get Api Keys {id}
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/api-keys/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Replace Assets {id} Original
+  type: http
+  seq: 24
+}
+
+put {
+  url: {{baseUrl}}/assets/:id/original
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+params:query {
+  key: 
+  slug: 
+}
+
+settings {
+  encodeUrl: true
+}

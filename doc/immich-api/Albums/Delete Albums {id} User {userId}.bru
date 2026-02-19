@@ -1,0 +1,20 @@
+meta {
+  name: Delete Albums {id} User {userId}
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/albums/:id/user/:userId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 
+  userId: 
+}
+
+settings {
+  encodeUrl: true
+}

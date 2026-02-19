@@ -1,0 +1,40 @@
+meta {
+  name: Replace Workflows {id}
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/workflows/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "actions": [
+      {
+        "actionConfig": "",
+        "pluginActionId": ""
+      }
+    ],
+    "description": "",
+    "enabled": false,
+    "filters": [
+      {
+        "filterConfig": "",
+        "pluginFilterId": ""
+      }
+    ],
+    "name": "",
+    "triggerType": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

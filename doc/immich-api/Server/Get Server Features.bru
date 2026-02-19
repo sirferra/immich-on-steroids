@@ -1,0 +1,15 @@
+meta {
+  name: Get Server Features
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/server/features
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

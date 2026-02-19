@@ -1,0 +1,23 @@
+meta {
+  name: Create Auth Admin Sign Up
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/auth/admin-sign-up
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "testuser@email.com",
+    "name": "Admin",
+    "password": "password"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

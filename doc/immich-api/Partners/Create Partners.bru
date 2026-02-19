@@ -1,0 +1,21 @@
+meta {
+  name: Create Partners
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/partners
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "sharedWithId": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

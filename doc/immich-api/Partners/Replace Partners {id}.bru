@@ -1,0 +1,25 @@
+meta {
+  name: Replace Partners {id}
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/partners/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "inTimeline": false
+  }
+}
+
+settings {
+  encodeUrl: true
+}

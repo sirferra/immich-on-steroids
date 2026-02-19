@@ -1,0 +1,31 @@
+meta {
+  name: Create Admin Notifications Test Email
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/admin/notifications/test-email
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "enabled": false,
+    "from": "",
+    "replyTo": "",
+    "transport": {
+      "host": "",
+      "ignoreCert": false,
+      "password": "",
+      "port": 0,
+      "secure": false,
+      "username": ""
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

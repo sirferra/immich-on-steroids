@@ -1,0 +1,19 @@
+meta {
+  name: Get Queues {name}
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/queues/:name
+  body: none
+  auth: inherit
+}
+
+params:path {
+  name: 
+}
+
+settings {
+  encodeUrl: true
+}
