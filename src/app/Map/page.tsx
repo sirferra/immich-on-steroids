@@ -1,7 +1,7 @@
-export default function FoldersPage() {
+export default function MapPage() {
   return (
     <section>
-      <h1 className="text-2xl font-semibold">Carpetas</h1>
+      <h1 className="text-2xl font-semibold">Mapa</h1>
       <p className="mt-2 text-sm opacity-80">Pagina en construccion.</p>
     </section>
   );
