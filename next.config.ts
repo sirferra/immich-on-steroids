@@ -4,9 +4,12 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
   images:{
-    remotePatterns:[
-      new URL('https://via.placeholder.com/**')
-    ]
+    remotePatterns:[],
+    localPatterns: [
+      { pathname: "/api/assets/**" },
+      { pathname: "/api/assets/**", search: "?size=thumbnail" },
+      { pathname: "/api/assets/**", search: "?size=preview" },
+    ],
   }
 };
 

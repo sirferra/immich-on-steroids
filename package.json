@@ -23,7 +23,8 @@
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "types": "link:@tabler/icons-react/types"
+    "types": "link:@tabler/icons-react/types",
+    "zustand": "^5.0.11"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
