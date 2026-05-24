@@ -25,8 +25,6 @@ export async function proxyImmichGet(
 
   mergeSearchParams(requestUrl, upstreamUrl);
 
-  console.log(`============= Proxying request to: ${upstreamUrl.toString()}`);
-
   const upstreamResponse = await fetch(upstreamUrl.toString(), {
     method: "GET",
     headers: {

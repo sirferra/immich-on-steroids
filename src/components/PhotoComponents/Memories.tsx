@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { Asset, type AssetType } from "@/models/Asset";
 import { MemoryType } from "@/models/Memory";
+import ClickeableImage from "./ClickableImage";
 
 type MemoriesProps = {
   memories: MemoryType[];
@@ -40,14 +40,15 @@ export default function Memories({ memories = [] }: MemoriesProps) {
         const asset = new Asset(memory.assets[0] as AssetType);
         return (
           <div key={memory.id} className="flex flex-col items-center">
-            <Image 
+            <ClickeableImage 
               key={asset.id}
               src={asset.getThumb("thumbnail")}
               alt={asset.originalFileName || `Asset ${asset.id}`}
               width={220}
               height={220}
               className="h-40 w-full object-cover"
-              onClick={() => console.log(memory)}
+              eventType="renderAssets"
+              payload={memory.assets}
             />
             <p className="text-sm mt-1 text-center">{parsePassTime(memory.data.year)} ({memory.data.year})</p>
           </div> 
